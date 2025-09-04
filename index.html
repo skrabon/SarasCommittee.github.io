@@ -25,10 +25,36 @@
     font-size: 1.5rem;
     margin-top: 1rem;
   }
+  .buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  a button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  a button:hover {
+    opacity: 0.8;
+  }
+  .yes {
+    background-color: #22c55e;
+    color: white;
+  }
+  .no {
+    background-color: #ef4444;
+    color: white;
+  }
   </style>
 </head>
 <body>
   <img src="images/thumbsup-gif.gif" alt="Thumbsup">
-  <p>Welcome to the committee, Rob!</p>
+  <p>Will you be my MA thesis advisor?</p>
+  <div class="buttons">
+    <a href="yes.html"><button class="yes :)">Yes</button></a>
+    <a href="no.html"><button class="no >:(">No</button></a>
+  </div>
 </body>
 </html>
