@@ -3,97 +3,32 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Meme Gallery</title>
-<meta name="description" content="A tiny, single‑file meme gallery for GitHub Pages." />
-<meta name="theme-color" content="#111827" />
+<title>Welcome</title>
 <style>
-:root{
---bg: #0b0f19;
---bg-soft:#111827;
---text:#e5e7eb;
---muted:#9ca3af;
---card:#0f172a;
---accent:#22d3ee;
---ring:#334155;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
 }
-@media (prefers-color-scheme: light){
-:root{
---bg:#f8fafc; --bg-soft:#f1f5f9; --text:#0f172a; --muted:#475569; --card:#ffffff; --accent:#0ea5e9; --ring:#cbd5e1;
+img {
+  max-width: 80%;
+  height: auto;
 }
+p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
 }
-[data-theme="light"]{ --bg:#f8fafc; --bg-soft:#f1f5f9; --text:#0f172a; --muted:#475569; --card:#ffffff; --accent:#0ea5e9; --ring:#cbd5e1; }
-
-
-html,body{height:100%}
-body{
-margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
-background:var(--bg); color:var(--text);
-display:flex; flex-direction:column;
-}
-header{
-position:sticky; top:0; z-index:10;
-backdrop-filter: blur(8px);
-background: color-mix(in oklab, var(--bg), transparent 35%);
-border-bottom:1px solid var(--ring);
-}
-.wrap{ max-width:1100px; margin:0 auto; padding:16px; }
-.brand{ display:flex; align-items:center; gap:12px; font-weight:700; letter-spacing:0.3px; }
-.brand span.logo{ width:28px; height:28px; border-radius:50%; background:conic-gradient(from 210deg, var(--accent), #a78bfa, #22c55e); box-shadow:0 0 0 3px color-mix(in oklab, var(--accent), transparent 70%); }
-.controls{ margin-left:auto; display:flex; align-items:center; gap:8px; }
-.btn{ appearance:none; border:1px solid var(--ring); background:var(--bg-soft); color:var(--text); padding:8px 12px; border-radius:999px; cursor:pointer; font-weight:600; }
-.btn:hover{ border-color: color-mix(in oklab, var(--accent), var(--ring) 70%); }
-.muted{ color:var(--muted); font-weight:500; }
-
-
-main{ flex:1; }
-.grid{
-display:grid; gap:14px; padding:20px; max-width:1100px; margin:0 auto;
-grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-}
-figure{
-margin:0; background:var(--card); border:1px solid var(--ring); border-radius:16px; overflow:hidden; box-shadow: 0 6px 20px rgba(0,0,0,.2);
-display:flex; flex-direction:column; min-height:100%;
-}
-figure img{ width:100%; height:240px; object-fit:cover; display:block; background:var(--bg-soft); aspect-ratio: 4/3; }
-figcaption{ padding:10px 12px; font-size:0.95rem; display:flex; align-items:center; justify-content:space-between; gap:8px; }
-figcaption .cap{ overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
-.card-actions{ display:flex; gap:6px; }
-.icon-btn{ border:none; background:transparent; cursor:pointer; padding:6px; border-radius:10px; }
-.icon-btn:hover{ background: color-mix(in oklab, var(--accent), transparent 86%); }
-.icon{ width:18px; height:18px; display:inline-block; }
-
-
-/* Lightbox */
-.lightbox{ position:fixed; inset:0; display:none; align-items:center; justify-content:center; background:rgba(0,0,0,.8); z-index:50; }
-.lightbox.open{ display:flex; }
-.lightbox-inner{ position:relative; max-width:min(96vw, 1100px); max-height:90vh; }
-.lightbox img{ max-width:100%; max-height:90vh; display:block; border-radius:16px; }
-.lightbox .lb-actions{ position:absolute; inset:auto 0 -52px 0; display:flex; justify-content:space-between; align-items:center; gap:8px; }
-.lb-chip{ background:var(--card); border:1px solid var(--ring); color:var(--text); padding:8px 12px; border-radius:999px; box-shadow:0 6px 20px rgba(0,0,0,.25); }
-.lb-right{ display:flex; gap:8px; }
-
-
-footer{ border-top:1px solid var(--ring); }
-footer .wrap{ display:flex; gap:10px; flex-wrap:wrap; justify-content:space-between; align-items:center; }
-a{ color:var(--accent); text-decoration:none; }
 </style>
 </head>
 <body>
-<header>
-<div class="wrap" style="display:flex; gap:12px; align-items:center;">
-<span class="brand"><span class="logo"></span> Meme Gallery</span>
-<span class="muted">Drop your memes into <code>/images</code> and list them below.</span>
-<div class="controls">
-<button class="btn" id="themeBtn" title="Toggle light/dark">Toggle Theme</button>
-</div>
-</div>
-</header>
-
-
-<main>
-<section class="grid" id="gallery" aria-live="polite"></section>
-</main>
-
-
-<footer>
+  <img src="images/meme.jpg" alt="Meme Image">
+  <p>Welcome to the committee!</p>
+</body>
 </html>
